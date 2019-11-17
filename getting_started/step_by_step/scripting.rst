@@ -227,7 +227,7 @@ node that owns the script.
 For the sake of convenience, delete everything underneath ``extends Panel``.
 You will fill out the rest of the script manually.
 
-Because the Button and Label are siblings under the Panel
+Because the Button is a child of the Panel
 where the script is attached, you can fetch the Button by typing
 the following underneath the ``_ready()`` function:
 
@@ -244,7 +244,7 @@ the following underneath the ``_ready()`` function:
         GetNode("Button");
     }
 
-Next, write a function which will be called when the button is pressed:
+Next, write a function which will be called when the button is pressed (fetching the Label in a way similary to the Button):
 
 .. tabs::
  .. code-tab:: gdscript GDScript
